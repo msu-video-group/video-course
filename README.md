@@ -9,6 +9,7 @@
 * Сдача заданий: https://anytask.org/course/465
 * Телеграм-канал: http://bit.ly/vgcourse_channel
 * Телеграм-чат: http://bit.ly/vgcourse_chat
+* Гайд по Jupyter: https://jupyter.readthedocs.io/en/latest/content-quickstart.html
 
 ## Содержание курса
 1. Введение, задача обнаружения смены сцен
