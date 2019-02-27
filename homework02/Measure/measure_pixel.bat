@@ -1,0 +1,1 @@
+"C:\Tools\VirtualDub x86\VirtualDub.exe" /s measure_pixel.vdscript /x

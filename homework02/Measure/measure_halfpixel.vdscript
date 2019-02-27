@@ -1,0 +1,36 @@
+VirtualDub.Open("source.avi");
+
+VirtualDub.audio.SetSource(0);
+VirtualDub.audio.SetMode(0);
+VirtualDub.audio.SetInterleave(1,500,1,0,0);
+VirtualDub.audio.SetClipMode(1,1);
+VirtualDub.audio.SetEditMode(1);
+VirtualDub.audio.SetConversion(0,0,0,0,0);
+VirtualDub.audio.SetVolume();
+VirtualDub.audio.SetCompression();
+VirtualDub.audio.EnableFilterGraph(0);
+VirtualDub.audio.filters.Clear();
+VirtualDub.video.SetInputFormat(0);
+VirtualDub.video.SetOutputFormat(7);
+VirtualDub.video.SetMode(3);
+VirtualDub.video.SetRange(0, 0);
+VirtualDub.video.SetSmartRendering(0);
+VirtualDub.video.SetPreserveEmptyFrames(0);
+VirtualDub.video.SetFrameRate2(0,0,1);
+VirtualDub.video.SetIVTC(0, 0, 0, 0);
+VirtualDub.video.SetCompression();
+VirtualDub.video.filters.Clear();
+VirtualDub.video.filters.Add("ME_your_surname");
+
+VirtualDub.video.filters.instance[0].Config(3, 0, 0, 1, 20, 1);
+VirtualDub.SaveAVI("halfpixel-20.avi");
+VirtualDub.video.filters.instance[0].Config(3, 0, 0, 1, 40, 1);
+VirtualDub.SaveAVI("halfpixel-40.avi");
+VirtualDub.video.filters.instance[0].Config(3, 0, 0, 1, 60, 1);
+VirtualDub.SaveAVI("halfpixel-60.avi");
+VirtualDub.video.filters.instance[0].Config(3, 0, 0, 1, 80, 1);
+VirtualDub.SaveAVI("halfpixel-80.avi");
+VirtualDub.video.filters.instance[0].Config(3, 0, 0, 1, 100, 1);
+VirtualDub.SaveAVI("halfpixel-100.avi");
+
+VirtualDub.Close();
