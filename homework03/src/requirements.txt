@@ -1,0 +1,10 @@
+opencv-python
+scikit-image
+scikit-video
+scikit-learn
+numpy
+scipy
+PyFlow
+Pillow
+ffmpeg
+matplotlib
